@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutionException;
 
 public class NewsAgentService {
     public NewsAgentResponse getNewsAgentResponse(String keyword,UUID sessionId){
-        return null;
+
     }
 
 }

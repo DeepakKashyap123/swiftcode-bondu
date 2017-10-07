@@ -18,7 +18,7 @@ import java.util.Objects;
 
 public class HomeController extends Controller {
     public Result index(){
-        return ok(views.html.index.render());
+        return ok(views.html.chat.render());
     }
     public LegacyWebSocket<String>chatSocket(){
         return WebSocket.withActor(MessageActor::props);

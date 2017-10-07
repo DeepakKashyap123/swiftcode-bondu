@@ -11,7 +11,7 @@ import java.util.concurrent.CompletionStage;
 import java.util.concurrent.ExecutionException;
 
 public class NewsAgentService {
-    public NewsAgentResponse getNewsAgentResponse(String keyword,UUID sessionId){
+    public NewsAgentResponse getNewsAgentResponse(String keyword, UUID sessionId) {
         NewsAgentResponse newsAgentResponse = new NewsAgentResponse();
         try {
             WSRequest queryRequest = WS.url("https://api.api.ai/api/query");
@@ -25,9 +25,10 @@ public class NewsAgentService {
                     .get();
             JsonNode response = responsePromise.thenApply(WSResponse::asJson).toCompletableFuture().get();
             newsAgentResponse.keyword = response.get("result").get("parameters").get("keyword").asText();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return newsAgentResponse;
 
+    }
 }

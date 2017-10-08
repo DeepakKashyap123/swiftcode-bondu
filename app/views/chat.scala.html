@@ -30,12 +30,12 @@
         </md-content>
         <md-card id="form-card" flex="10" layout="row" class="md-whiteframe-8dp">
             <form flex="90" layout="row" ng-submit="sendMessage()">
-                <md-input-container layout-align="center center" flex="90">
+                <md-input-container class="md-accent" layout-align="center center" flex="90">
                     <label>Message</label>
                     <input ng-model="userMessage">
                 </md-input-container>
             </form>
-            <md-button flex="10" class="md-fab md-icon-button" ng-click="sendMessage()">
+            <md-button flex="10" class="md-fab md-accent md-icon-button" ng-click="sendMessage()">
                 <md-icon md-svg-icon="/assets/images/ic_send_black_48px.svg"></md-icon>
             </md-button>
         </md-card>

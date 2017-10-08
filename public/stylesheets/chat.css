@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Shadows+Into+Light');
 #message-pane {
     background: url(http://bestanimations.com/Music/Dancers/guys-dancing/funny-dance-move-6.gif);
     background-repeat: no-repeat;
@@ -8,12 +10,15 @@
 max-width:75%;
 border-radius:10px;
 padding:10px;
-font-size:14px;
+font-size:20px;
+font-family: 'Shadows Into Light', bold;
+font-weight:bold;
+box-shadow: 2px 0px 10px 5px rgb(109, 113, 119);
 }
 .message-time{
 margin-top:4px;
 float:right;
 color:#3b4742;
-font-size:10px;}
+font-size:14px;}
 /*http://bestanimations.com/Music/Dancers/guys-dancing/funny-dance-move-6.gif*/
 /*http://merabheja.com/wp-content/uploads/2016/10/39cb1e90c7d901332b0236c13a486f67.gif*/

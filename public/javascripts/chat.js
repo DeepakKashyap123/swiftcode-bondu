@@ -14,8 +14,13 @@ app.controller('chatController', function ($scope, $sce) {
         },
         {
             'sender':'USER',
-            'text':"News about north korea",
+            'text':"Black guy dancing!",
             'time':'10:03 AM'
-            }
+            },
+            {
+                        'sender':'BOT',
+                        'text':"See the background fool!",
+                        'time':'10:03 AM'
+                        }
     ]
 });

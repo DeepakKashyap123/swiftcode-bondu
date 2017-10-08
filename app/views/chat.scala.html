@@ -27,8 +27,12 @@
             </div>
 
         </md-content>
-        <md-card id="form-card" flex="10">
-            <form>
+        <md-card id="form-card" flex="10" layout="row">
+            <form flex="90" layout="row" ng-submit="sendMessage()">
+                <md-input-container flex>
+                    <label>Message</label>
+                    <input ng-model="userMessage">
+                </md-input-container>
             </form>
             <md-button></md-button>
         </md-card>

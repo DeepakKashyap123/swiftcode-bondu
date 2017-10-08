@@ -13,6 +13,10 @@
     <md-card flex="none" layout="column" style="max-width: 100%;width:800px">
         <md-content id="message-pane" flex="90">
 
+            <div ng-repeat="message in messages" layout="column">
+                <span>{{message.text}}</span>
+            </div>
+
         </md-content>
         <md-card id="form-card" flex="10">
             <form>

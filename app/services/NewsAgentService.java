@@ -17,11 +17,11 @@ public class NewsAgentService {
             WSRequest queryRequest = WS.url("https://api.api.ai/api/query");
             CompletionStage<WSResponse> responsePromise = queryRequest
                     .setQueryParameter("v", "20150910")
-                    .setQueryParameter("query", keyword)
+                    .setQueryParameter("query", "news about " + keyword)
                     .setQueryParameter("lang", "en")
                     .setQueryParameter("sessionId", sessionId.toString())
                     .setQueryParameter("timezone", "2017-08-09TO3:25:23+0530")
-                    .setQueryParameter("Authorization", "Bearer946df4ead6524dbcaeb5c6c2409462b6")
+                    .setHeader("Authorization", "Bearer946df4ead6524dbcaeb5c6c2409462b6")
                     .get();
             JsonNode response = responsePromise.thenApply(WSResponse::asJson).toCompletableFuture().get();
             newsAgentResponse.keyword = response.get("result").get("parameters").get("keyword").asText();

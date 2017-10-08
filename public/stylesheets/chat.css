@@ -1,7 +1,19 @@
 #message-pane {
-    background: url(https://image.freepik.com/free-psd/white-wood-texture-background-design_1022-75.jpg);
+    background: url(http://bestanimations.com/Music/Dancers/guys-dancing/funny-dance-move-6.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     }
+.message-card{
+max-width:75%;
+border-radius:10px;
+padding:10px;
+font-size:14px;
 }
+.message-time{
+margin-top:4px;
+float:right;
+color:#3b4742;
+font-size:10px;}
+/*http://bestanimations.com/Music/Dancers/guys-dancing/funny-dance-move-6.gif*/
+/*http://merabheja.com/wp-content/uploads/2016/10/39cb1e90c7d901332b0236c13a486f67.gif*/
